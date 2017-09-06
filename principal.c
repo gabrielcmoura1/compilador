@@ -68,9 +68,83 @@ int leitor(char str[]) {
             goto Q52;
             break;
       // caracteres
-
+      case ',' :
+            i++;
+            goto Q102;
+            break;
+      case ':' :
+            i++;
+            goto Q101;
+            break;
+      case '(' :
+            i++;
+            goto Q99;
+            break;
+      case ';' :
+            i++;
+            goto Q98;
+            break;
+      case '>' :
+            i++;
+            goto Q96;
+            break;
+      case ')' :
+            i++;
+            goto Q97;
+            break;
+      case '*' :
+            i++;
+            goto Q104;
+            break;
+      case '-' :
+            i++;
+            goto Q105;
+            break;
+      case '+' :
+            i++;
+            goto Q94;
+            break;     
       // numeros
-
+     case '0' :
+            i++;
+            goto Q127;
+            break;
+      case '1' :
+            i++;
+            goto Q127;
+            break;
+      case '2' :
+            i++;
+            goto Q127;
+            break;
+      case '3' :
+            i++;
+            goto Q127;
+            break;
+      case '4' :
+            i++;
+            goto Q127;
+            break;
+      case '5' :
+            i++;
+            goto Q127;
+            break;
+      case '6' :
+            i++;
+            goto Q127;
+            break;
+      case '7' :
+            i++;
+            goto Q127;
+            break;
+      case '8' :
+            i++;
+            goto Q127;
+            break;
+     case '9' :
+            i++;
+            goto Q127;
+            break;  
       default :
          printf("Invalid grade\n" );
          break;
