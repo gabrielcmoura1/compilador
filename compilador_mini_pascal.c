@@ -28,73 +28,95 @@ int leitor(char str[]) {
 	    if ((str[i] == '0')||(str[i] == '1')||(str[i] == '2')||(str[i] == '3')||(str[i] == '4')||(str[i] == '5')||(str[i] == '6')||(str[i] == '7')||(str[i] == '8')||(str[i] == '9')){     
 	        goto Q88;
 	    } else {
-	    if(str[i] == 'a'){
-			goto Q42;
-	    } else
-	    if (str[i] == 'b'){    
-	        goto Q59;
-	    } else {
-	    if (str[i] == 'd'){    
-	        goto Q72;
-	    } else {
-		if (str[i] == 'e'){    
-	        goto Q1;
-	    } else {
-		if (str[i] == 'f'){    
-	        goto Q45;
-	    } else {	
-	    if (str[i] == 'i'){    
-	        goto Q28;
-	    } else {
-	    if (str[i] == 'n'){    
-	        goto Q39;
-	    } else {
-	    if (str[i] == 'o'){    
-	        goto Q74;
-	    } else {
-	    if (str[i] == 'p'){    
-	        goto Q15;
-	    } else {	
-	    if (str[i] == 't'){    
-	        goto Q8;
-	    } else {
-	    if (str[i] == 'v'){    
-	        goto Q36;
-	    } else {
-	    if (str[i] == 'w'){    
-	        goto Q50;
-	    } else {
-	    if (str[i] == '<'){    
-	        goto Q76;
-	    } else {
-		if (str[i] == '>'){    
-	        goto Q77;
-	    } else {
-		if (str[i] == ':'){    
-	        goto Q78;
-	    } else {
-		if (str[i] == ','){    
-	        goto Q81;
-	    } else {
-		if (str[i] == '('){    
-	        goto Q82;
-	    } else {	
-	    if (str[i] == ';'){    
-	        goto Q83;
-	    } else {
-	    if (str[i] == ')'){    
-	        goto Q84;
-	    } else {
-	    if (str[i] == '*'){    
-	        goto Q85;
-	    } else {
-	    if (str[i] == '-'){    
-	        goto Q86;
-	    } else {
-	    if (str[i] == '+'){    
-	        goto Q87;
-	    } else {
-	    	return 0;
+	        if(str[i] == 'a'){
+		       	goto Q42;
+	        } else {
+				if (str[i] == 'b'){    
+	                goto Q59;
+	            } else {
+	                if (str[i] == 'd'){    
+	                    goto Q72;
+	                } else {
+	                   	if (str[i] == 'e'){    
+	                        goto Q1;
+	                    } else {
+	                        if (str[i] == 'f'){    
+	                            goto Q45;
+	                        } else {	
+	                            if (str[i] == 'i'){    
+	                                goto Q28;
+	                            } else {
+	                                if (str[i] == 'n'){    
+	                                    goto Q39;
+	                                } else {
+	                                    if (str[i] == 'o'){    
+	                                        goto Q74;
+	                                    } else {
+	                                        if (str[i] == 'p'){    
+	                                            goto Q15;
+	                                        } else {	
+	                                            if (str[i] == 't'){    
+	                                                goto Q8;
+	                                            } else {
+	                                                if (str[i] == 'v'){    
+	                                                    goto Q36;
+	                                                } else {
+	                                                    if (str[i] == 'w'){    
+	                                                        goto Q50;
+	                                                    } else {
+	                                                        if (str[i] == '<'){    
+	                                                            goto Q76;
+	                                                        } else {
+	                                                        	if (str[i] == '>'){    
+	                                                                goto Q77;
+	                                                            } else {
+	                                                             	if (str[i] == ':'){    
+	                                                                    goto Q78;
+	                                                                } else {
+																		if (str[i] == ','){    
+																		    goto Q81;
+																		} else {
+																			if (str[i] == '('){    
+																		        goto Q82;
+																			} else {	
+																			    if (str[i] == ';'){    
+																			        goto Q83;
+																			    } else {
+																			        if (str[i] == ')'){    
+																			            goto Q84;
+																			        } else {
+																			            if (str[i] == '*'){    
+																			                goto Q85;
+																			            } else {
+																			                if (str[i] == '-'){    
+																			                    goto Q86;
+																			                } else {
+																			                    if (str[i] == '+'){    
+																			                        goto Q87;
+																			                    } else {
+																			                    	return 0;
+																							 	}
+																							 }
+																						}
+																					}
+																				}	
+																		    }
+																		}
+																	}
+																}
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+		    	}
+		    }
 		}
 	/*else*/ /*end.*/	
 	Q1:
@@ -102,11 +124,12 @@ int leitor(char str[]) {
 	    if(str[i] == 'n'){
 			goto Q5;
 	    } else {
-	    if(str[i] == 'l'){
-			goto Q2;
-	    } else {	
-	    	return 0;
-	    }
+	        if(str[i] == 'l'){
+		       goto Q2;
+	        } else {	
+	        	return 0;
+	        }
+    	}
 	Q2:
 	    i++;
 	    if(str[i] == 's'){
@@ -155,11 +178,12 @@ int leitor(char str[]) {
 	    if(str[i] == 'r'){
 			goto Q9;
 	    } else {
-	    if(str[i] == 'h'){
-			goto Q12;
-	    } else {	
-	    	return 0;
-	    }
+	        if(str[i] == 'h'){
+		       goto Q12;
+	        } else {	
+	    	    return 0;
+	        }
+    	}
 	Q9:
 	    i++;
 	    if(str[i] == 'u'){
@@ -222,10 +246,11 @@ int leitor(char str[]) {
 	    if(str[i] == 'g'){
 			goto Q18;
 	    } else {
-	    if(str[i] == 'c'){
-			goto Q22;
-	    } else {
-	    	return 0;
+	        if(str[i] == 'c'){
+		       goto Q22;
+	        } else {
+	        	return 0;
+	        }
 	    }
 	Q18:
 	    i++;
@@ -302,12 +327,13 @@ int leitor(char str[]) {
 	    i++;
 	    if(str[i] == 'n'){
 			goto Q30;
-	    } else {
-	    if(str[i] == 'f'){
-			goto Q29;
-	    } else {
-	    	return 0;
-	    }
+	        } else {
+	           if(str[i] == 'f'){
+		          goto Q29;
+	            } else {
+	             	return 0;
+	            }
+	        }
 	Q29:
 	    i++;
 	    if (i == tamanho) {
@@ -465,11 +491,12 @@ int leitor(char str[]) {
 	    if(str[i] == 'h'){
 			goto Q51;
 	    } else {
-	    if(str[i] == 'r'){
-			goto Q55;
-	    } else {	
-	    	return 0;
-	    }	
+	         if(str[i] == 'r'){
+		    	goto Q55;
+	        } else {	
+	        	return 0;
+	        }
+    	}
 	Q51:
 	    i++;
 	    if(str[i] == 'i'){
@@ -627,16 +654,17 @@ int leitor(char str[]) {
 	    if(str[i] == 'o'){
 			goto Q73;
 	    } else {
-	    if(str[i] == 'i'){
-			goto Q70;
-	    } else {
-	    	return 0;
-	    }    
+	         if(str[i] == 'i'){
+			    goto Q70;
+	        } else {
+	    	     return 0;
+	        } 
+    	}
 	Q73:
 		i++;
 	    if (i == tamanho) {
 	        return 1;
-	    }  else {
+	    }else {
 	    	return 0;
 		}
 	 /*or*/		
@@ -660,11 +688,13 @@ int leitor(char str[]) {
 	    if(str[i] == '>'){
 			goto Q80;
 	    } else {
-	    if(str[i] == '='){
-			goto Q79;
-	    } else {	
+	        if(str[i] == '='){
+		   	   goto Q79;
+	       } else {	
 	    	return 0;
 	    } 
+	}
+
 	/*>*/		
 	Q77:
 	    i++;
@@ -681,6 +711,20 @@ int leitor(char str[]) {
 	    } else {
 	    	return 0;
 	    }
+	Q79:
+	    i++;
+	    if (i == tamanho) {
+	        return 1;
+	    }  else {
+	    	return 0;
+		}   
+	Q80:
+	    i++;
+	    if (i == tamanho) {
+	        return 1;
+	    }  else {
+	    	return 0;
+		} 	
 	/*,*/		
 	Q81:
 	    i++;
@@ -734,7 +778,7 @@ int leitor(char str[]) {
 	    i++;
 	    if (i == tamanho) {
 	        return 1;
-	    }  else {
+	      }else {
 	    	return 0;
 		}
 	/*0-1-2-3-4-5-6-7-8-9*/		
@@ -742,13 +786,13 @@ int leitor(char str[]) {
 	    i++;
 	    if (i == tamanho) {
 	        return 1;
-	    }  else {
-	    if ((str[i] == '0')||(str[i] == '1')||(str[i] == '2')||(str[i] == '3')||(str[i] == '4')||(str[i] == '5')||(str[i] == '6')||(str[i] == '7')||(str[i] == '8')||(str[i] == '9')){     
-	        goto Q88;
 	    } else {
-	   	
-	    	return 0;
-		}																	
+	        if ((str[i] == '0')||(str[i] == '1')||(str[i] == '2')||(str[i] == '3')||(str[i] == '4')||(str[i] == '5')||(str[i] == '6')||(str[i] == '7')||(str[i] == '8')||(str[i] == '9')){     
+	            goto Q88;
+	        } else {
+	   	     	return 0;
+	    	}
+    	}
 	return 1;
 }
 
