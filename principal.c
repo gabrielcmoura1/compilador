@@ -8,6 +8,12 @@
 #include <ctype.h>
 #include <string.h>
 
+#define ANDX
+#define BOOLEANX
+#define BEGINX
+#define BEGINX
+#define IFX
+
 int leitor(char str[]) {
     int i = -1, tamanho = strlen(str);
 
@@ -170,7 +176,7 @@ int leitor(char str[]) {
         case ' ' :
         return 1;
       default :
-         printf("Invalid grade\n" );
+         return -1;
          break;
     }
 
@@ -205,7 +211,7 @@ int leitor(char str[]) {
       case ' ' :
         return 1;
       default :
-         printf("Invalid grade\n" );
+         return -1;
          break;
     }
 
@@ -255,7 +261,7 @@ int leitor(char str[]) {
       case ' ' :
         return 1;
       default :
-         printf("Invalid grade\n" );
+         return -1;
          break;
     }
 
@@ -290,7 +296,7 @@ int leitor(char str[]) {
       case ' ' :
         return 1;
       default :
-         printf("Invalid grade\n" );
+         return -1;
          break;
     }
 
@@ -376,7 +382,7 @@ int leitor(char str[]) {
       case ' ' :
         return 1;
       default :
-         printf("Invalid grade\n" );
+         return -1;
          break;
     }
 
@@ -446,7 +452,7 @@ int leitor(char str[]) {
       case ' ' :
         return 1;
       default :
-         printf("Invalid grade\n" );
+         return -1;
          break;
     }
 
@@ -472,7 +478,7 @@ int leitor(char str[]) {
       case ' ' :
         return 1;
       default :
-         printf("Invalid grade\n" );
+         return -1;
          break;
     }
 
@@ -543,7 +549,7 @@ int leitor(char str[]) {
       case ' ' :
         return 1;
       default :
-         printf("Invalid grade\n" );
+         return -1;
          break;
     }
 
@@ -648,7 +654,7 @@ int leitor(char str[]) {
       case ' ' :
         return 1;
       default :
-         printf("Invalid grade\n" );
+         return -1;
          break;
     }
 
@@ -707,7 +713,7 @@ int leitor(char str[]) {
       case ' ' :
         return 1;
       default :
-         printf("Invalid grade\n" );
+         return -1;
          break;
     }
 
@@ -769,7 +775,7 @@ int leitor(char str[]) {
       case ' ' :
         return 1;
       default :
-         printf("Invalid grade\n" );
+         return -1;
          break;
     }
 
@@ -816,7 +822,7 @@ int leitor(char str[]) {
       case ' ' :
         return 1;
       default :
-         printf("Invalid grade\n" );
+         return -1;
          break;
     }
 
@@ -878,7 +884,7 @@ int leitor(char str[]) {
       case ' ' :
         return 1;
       default :
-         printf("Invalid grade\n" );
+         return -1;
          break;
     }
 
@@ -949,7 +955,7 @@ int leitor(char str[]) {
       case ' ' :
         return 1;
       default :
-         printf("Invalid grade\n" );
+         return -1;
          break;
     }
 
@@ -972,7 +978,7 @@ int leitor(char str[]) {
       case ' ' :
         return 1;
       default :
-         printf("Invalid grade\n" );
+         return -1;
          break;
     }
 
@@ -998,7 +1004,7 @@ int leitor(char str[]) {
       case ' ' :
         return 1;
       default :
-         printf("Invalid grade\n" );
+         return -1;
          break;
     }
 
@@ -1021,7 +1027,7 @@ int leitor(char str[]) {
       case ' ' :
         return 1;
       default :
-         printf("Invalid grade\n" );
+         return -1;
          break;
     }
 
