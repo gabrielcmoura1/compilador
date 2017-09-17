@@ -9,7 +9,7 @@
 #include <string.h>
 
 int leitor(char str[]) {
-    int i = 0, tamanho = strlen(str);
+    int i = -1, tamanho = strlen(str);
 
     goto Q0;
 
@@ -17,277 +17,206 @@ int leitor(char str[]) {
     if (i == tamanho) {
         return 1;
     }
+    i++;
     char grade = str[i];
+
     switch(grade) {
       case 'b' :
-            i++;
-            goto Q88;
+            goto Q59;
             break;
       case 'f' :
-            i++;
-            goto Q82;
+            goto Q45;
             break;
       case 'v' :
-            i++;
-            goto Q78;
+            goto Q36;
             break;
       case 'd' :
-            i++;
-            goto Q75;
+            goto Q72;
             break;
       case 't' :
-            i++;
-            goto Q39;
+            goto Q8;
             break;
       case 'w' :
-            i++;
-            goto Q60;
+            goto Q50;
             break;
       case 'i' :
-            i++;
-            goto Q10;
+            goto Q28;
             break;
       case 'p' :
-            i++;
-            goto Q9;
+            goto Q15;
             break;
       case 'e' :
-            i++;
-            goto Q29;
+            goto Q1;
             break;
       case 'a' :
-            i++;
-            goto Q16;
+            goto Q42;
             break;
       case 'n' :
-            i++;
-            goto Q32;
+            goto Q39;
             break;
       case 'o' :
-            i++;
-            goto Q52;
+            goto Q74;
             break;
       // caracteres
       case ',' :
-            i++;
-            goto Q102;
+            goto Q81;
             break;
       case ':' :
-            i++;
-            goto Q101;
-            break;
-      case '(' :
-            i++;
-            goto Q99;
-            break;
-      case ';' :
-            i++;
-            goto Q98;
-            break;
-      case '>' :
-            i++;
-            goto Q96;
-            break;
-      case ')' :
-            i++;
-            goto Q97;
-            break;
-      case '*' :
-            i++;
-            goto Q104;
-            break;
-      case '-' :
-            i++;
-            goto Q105;
-            break;
-      case '+' :
-            i++;
-            goto Q94;
-            break;     
-      // numeros
-     case '0' :
-            i++;
-            goto Q127;
-            break;
-      case '1' :
-            i++;
-            goto Q127;
-            break;
-      case '2' :
-            i++;
-            goto Q127;
-            break;
-      case '3' :
-            i++;
-            goto Q127;
-            break;
-      case '4' :
-            i++;
-            goto Q127;
-            break;
-      case '5' :
-            i++;
-            goto Q127;
-            break;
-      case '6' :
-            i++;
-            goto Q127;
-            break;
-      case '7' :
-            i++;
-            goto Q127;
-            break;
-      case '8' :
-            i++;
-            goto Q127;
-            break;
-     case '9' :
-            i++;
-            goto Q127;
-            break;  
-      default :
-         printf("Invalid grade\n" );
-         break;
-    }
-
-    Q88:
-    if (i == tamanho) {
-        return 1;
-    }
-     grade = str[i];
-    switch(grade) {
-      case 'b' :
-            i++;
-            goto Q88;
-            break;
-      case 'f' :
-            i++;
             goto Q82;
             break;
-      case 'v' :
-            i++;
-            goto Q78;
+      case '(' :
+            goto Q83;
+            break;
+      case ';' :
+            goto Q84;
+            break;
+      case '>' :
+            goto Q85;
+            break;
+      case '<' :
+            goto Q86;
+            break;
+      case ')' :
+            goto Q87;
+            break;
+      case '*' :
+            goto Q88;
+            break;
+      case '-' :
+            goto Q89;
+            break;
+      case '+' :
+            goto Q90;
+            break;
+      // numeros
+     case '0' :
+            goto  Q4;
+            break;
+      case '1' :
+            goto  Q4;
+            break;
+      case '2' :
+            goto  Q4;
+            break;
+      case '3' :
+            goto  Q4;
+            break;
+      case '4' :
+            goto  Q4;
+            break;
+      case '5' :
+            goto  Q4;
+            break;
+      case '6' :
+            goto  Q4;
+            break;
+      case '7' :
+            goto  Q4;
+            break;
+      case '8' :
+            goto  Q4;
+            break;
+     case '9' :
+            goto  Q4;
             break;
       default :
-         printf("Invalid grade\n" );
-         /*  SE ATENTAR A ESTA VALIDAÇÃO,
-         SE A PALAVRA TERMINAR DEPOIS DO 1 NIVEL
-         ELA VIRA UMA VARIAVEL DEPENDENDO DO CONTEXTO
-         PERGUNTAR PRO PROF. */
+
          break;
     }
 
-
-
-    Q16:
-    if (i == tamanho) {
-        return 1;
-    }
-     grade = str[i];
+    Q1:
+    i++;
+    grade = str[i];
     switch(grade) {
       case 'n' :
-            i++;
-            goto Q17;
+            goto Q5;
+            break;
+      case 'l' :
+            goto Q2;
             break;
       default :
          printf("Invalid grade\n" );
          break;
     }
 
-    Q17:
-    if (i == tamanho) {
-        return 1;
-    }
-     grade = str[i];
+    Q2:
+    i++;
+    grade = str[i];
     switch(grade) {
-      case 'd' :
-            i++;
+      case 's' :
+            goto Q3;
+            break;
+      default :
+         printf("Invalid grade\n" );
+         break;
+    }
+
+    Q3:
+    i++;
+    grade = str[i];
+    switch(grade) {
+      case 'e' :
             goto Q4;
             break;
       default :
          printf("Invalid grade\n" );
          break;
     }
-    Q78:
 
-    Q18:
-
-    Q19:
-    if (i == tamanho) {
-        return 1;
-    }
-     grade = str[i];
+    Q4:
+    i++;
+    grade = str[i];
     switch(grade) {
-      case 'e' :
-            i++;
-            goto Q20;
+        case ' ' :
+        return 1;
+      default :
+         printf("Invalid grade\n" );
+         break;
+    }
+
+    Q5:
+    i++;
+    grade = str[i];
+    switch(grade) {
+      case 'd' :
+            goto Q6;
             break;
       default :
          printf("Invalid grade\n" );
          break;
     }
 
-
-    Q20:
-    if (i == tamanho) {
-        return 1;
-    }
-     grade = str[i];
+    Q6:
+    i++;
+    grade = str[i];
+    printf("%c",grade);
     switch(grade) {
-      case 'n' :
-            i++;
-            goto Q27;
-            break;
+      case '.' :
+         return 1;
+      default :
+         return -1;
+         break;
+    }
+
+    Q7:
+    i++;
+    grade = str[i];
+    switch(grade) {
+      case ' ' :
+        return 1;
       default :
          printf("Invalid grade\n" );
          break;
     }
 
-    Q27:
-    if (i == tamanho) {
-        return 1;
-    }
-     grade = str[i];
+    Q8:
+    i++;
+    grade = str[i];
     switch(grade) {
-      case ' ' :    //terminal COPIAR PARA OS OUTROS
-          printf("PALAVRA RECONHECIDA\n" );
-          return 1;
-      default :
-         printf("Invalid grade\n" ); /* vira variavel dependendo do contexto */
-         break;
-    }
-
-    Q10:
-    if (i == tamanho) {
-        return 1;
-    }
-     grade = str[i];
-    switch(grade) {
-      case 'f' :
-            i++;
-            goto Q73;
+      case 'r' :
+            goto Q9;
             break;
-      case 'n' :
-            i++;
-            goto Q11;
-            break;
-      default :
-         printf("Invalid grade\n" );
-         /*  SE ATENTAR A ESTA VALIDAÇÃO,
-         SE A PALAVRA TERMINAR DEPOIS DO 1 NIVEL
-         ELA VIRA UMA VARIAVEL DEPENDENDO DO CONTEXTO
-         PERGUNTAR PRO PROF. */
-         break;
-    }
-
-    Q11:
-    if (i == tamanho) {
-        return 1;
-    }
-     grade = str[i];
-    switch(grade) {
-      case 't' :
-            i++;
+      case 'h' :
             goto Q12;
             break;
       default :
@@ -295,28 +224,58 @@ int leitor(char str[]) {
          break;
     }
 
-    Q12:
-    if (i == tamanho) {
-        return 1;
+    Q9:
+    i++;
+    grade = str[i];
+    switch(grade) {
+      case 'u' :
+            goto Q10;
+            break;
+      default :
+         printf("Invalid grade\n" );
+         break;
     }
-     grade = str[i];
+
+    Q10:
+    i++;
+    grade = str[i];
     switch(grade) {
       case 'e' :
-            i++;
+            goto Q11;
+            break;
+      default :
+         printf("Invalid grade\n" );
+         break;
+    }
+
+    Q11:
+    i++;
+    grade = str[i];
+    switch(grade) {
+      case ' ' :
+        return 1;
+      default :
+         printf("Invalid grade\n" );
+         break;
+    }
+
+    Q12:
+    i++;
+    grade = str[i];
+    switch(grade) {
+      case 'e' :
             goto Q13;
             break;
       default :
          printf("Invalid grade\n" );
          break;
     }
+
     Q13:
-    if (i == tamanho) {
-        return 1;
-    }
-     grade = str[i];
+    i++;
+    grade = str[i];
     switch(grade) {
-      case 'g' :
-            i++;
+      case 'n' :
             goto Q14;
             break;
       default :
@@ -325,28 +284,84 @@ int leitor(char str[]) {
     }
 
     Q14:
-    if (i == tamanho) {
-        return 1;
-    }
-     grade = str[i];
+    i++;
+    grade = str[i];
     switch(grade) {
-      case 'e' :
-            i++;
-            goto Q15;
-            break;
+      case ' ' :
+        return 1;
       default :
          printf("Invalid grade\n" );
          break;
     }
 
     Q15:
-    if (i == tamanho) {
-        return 1;
-    }
-     grade = str[i];
+    i++;
+    grade = str[i];
     switch(grade) {
       case 'r' :
-            i++;
+            goto Q16;
+            break;
+      default :
+         printf("Invalid grade\n" );
+         break;
+    }
+
+    Q16:
+    i++;
+    grade = str[i];
+    switch(grade) {
+      case 'o' :
+            goto Q17;
+            break;
+      default :
+         printf("Invalid grade\n" );
+         break;
+    }
+
+    Q17:
+    i++;
+    grade = str[i];
+    switch(grade) {
+      case 'g' :
+            goto Q18;
+            break;
+      case 'c' :
+            goto Q22;
+            break;
+      default :
+         printf("Invalid grade\n" );
+         break;
+    }
+
+    Q18:
+    i++;
+    grade = str[i];
+    switch(grade) {
+      case 'r' :
+            goto Q19;
+            break;
+      default :
+         printf("Invalid grade\n" );
+         break;
+    }
+
+    Q19:
+    i++;
+    grade = str[i];
+    switch(grade) {
+      case 'a' :
+            goto Q20;
+            break;
+      default :
+         printf("Invalid grade\n" );
+         break;
+    }
+
+    Q20:
+    i++;
+    grade = str[i];
+    switch(grade) {
+      case 'm' :
             goto Q21;
             break;
       default :
@@ -355,207 +370,117 @@ int leitor(char str[]) {
     }
 
     Q21:
-    if (i == tamanho) {
-        return 1;
-    }
-     grade = str[i];
-    switch(grade) {
-      case ' ' :    //terminal COPIAR PARA OS OUTROS
-        printf("PALAVRA RECONHECIDA\n" );
-        return 1;
-      default :
-         printf("Invalid grade\n" ); /* vira variavel dependendo do contexto */
-         break;
-    }
-
-    Q4:
-    if (i == tamanho) {
-        return 1;
-    }
-     grade = str[i];
-    switch(grade) {
-      case ' ' :    //terminal COPIAR PARA OS OUTROS
-        printf("PALAVRA RECONHECIDA\n" );
-        return 1;
-      default :
-         printf("Invalid grade\n" ); /* vira variavel dependendo do contexto */
-         break;
-    }
-
-    Q6:
-
-    Q60:
-    if (i == tamanho) {
-        return 1;
-    }
-     grade = str[i];
-    switch(grade) {
-      case 'f' :
-            i++;
-            goto Q7;
-            break;
-      case 'h' :
-            i++;
-            goto Q61;
-            break;
-      default :
-         printf("Invalid grade\n" );
-         /*  SE ATENTAR A ESTA VALIDAÇÃO,
-         SE A PALAVRA TERMINAR DEPOIS DO 1 NIVEL
-         ELA PODE VIRAR UMA VARIAVEL
-         PERGUNTAR PRO PROF. */
-         break;
-    }
-
-    Q61:
-
-    Q7:
-    if (i == tamanho) {
-        return 1;
-    }
-     grade = str[i];
-    switch(grade) {
-      case 'i' :
-            i++;
-            goto Q8;
-            break;
-      default :
-         printf("Invalid grade\n" );
-         break;
-    }
-
-
-    Q8:
-    if (i == tamanho) {
-        return 1;
-    }
-     grade = str[i];
-    switch(grade) {
-      case 't' :
-            i++;
-            goto Q3;
-            break;
-      default :
-         printf("Invalid grade\n" );
-         break;
-    }
-
-
-    Q3:
-    if (i == tamanho) {
-        return 1;
-    }
-     grade = str[i];
-    switch(grade) {
-      case 'e' :
-            i++;
-            goto Q3;
-            break;
-      default :
-         printf("Invalid grade\n" );
-         break;
-    }
-
-
-    Q22:
-    if (i == tamanho) {
-        return 1;
-    }
-     grade = str[i];
-    switch(grade) {
-      case ' ' :    //terminal COPIAR PARA OS OUTROS
-        printf("PALAVRA RECONHECIDA\n" );
-        return 1;
-      default :
-         printf("Invalid grade\n" ); /* vira variavel dependendo do contexto */
-         break;
-    }
-
-    Q52:
-
-    Q75:
-
-    Q82:
-
-    Q32:
-
-    Q9:
-
-    Q29:
-    if (i == tamanho) {
-        return 1;
-    }
+    i++;
     grade = str[i];
     switch(grade) {
-      case 'n' :
-            i++;
-            goto Q30;
-            break;
-      case 'l' :
-            i++;
-            goto Q2;
-            break;
+      case ' ' :
+        return 1;
       default :
          printf("Invalid grade\n" );
          break;
     }
 
-
-    Q2:
-    if (i == tamanho) {
-        return 1;
-    }
-     grade = str[i];
-    switch(grade) {
-      case 's' :
-            i++;
-            goto Q66;
-            break;
-      default :
-         printf("Invalid grade\n" );
-         break;
-    }
-
-
-    Q66:
-    if (i == tamanho) {
-        return 1;
-    }
-     grade = str[i];
+    Q22:
+    i++;
+    grade = str[i];
     switch(grade) {
       case 'e' :
-            i++;
-            goto Q67;
+            goto Q23;
             break;
       default :
          printf("Invalid grade\n" );
          break;
     }
 
-
-    Q67:
-    if (i == tamanho) {
-        return 1;
+    Q23:
+    i++;
+    grade = str[i];
+    switch(grade) {
+      case 'd' :
+            goto Q24;
+            break;
+      default :
+         printf("Invalid grade\n" );
+         break;
     }
-     grade = str[i];
+
+    Q24:
+    i++;
+    grade = str[i];
+    switch(grade) {
+      case 'u' :
+            goto Q25;
+            break;
+      default :
+         printf("Invalid grade\n" );
+         break;
+    }
+
+    Q25:
+    i++;
+    grade = str[i];
+    switch(grade) {
+      case 'r' :
+            goto Q26;
+            break;
+      default :
+         printf("Invalid grade\n" );
+         break;
+    }
+    Q26:
+    i++;
+    grade = str[i];
+    switch(grade) {
+      case 'e' :
+            goto Q27;
+            break;
+      default :
+         printf("Invalid grade\n" );
+         break;
+    }
+
+    Q27:
+    i++;
+    grade = str[i];
     switch(grade) {
       case ' ' :
-        printf("PALAVRA RECONHECIDA\n" );
         return 1;
       default :
          printf("Invalid grade\n" );
          break;
     }
 
+    Q28:
+    i++;
+    grade = str[i];
+    switch(grade) {
+      case 'f' :
+            goto Q29;
+            break;
+      case 'n' :
+            goto Q30;
+            break;
+      default :
+         printf("Invalid grade\n" );
+         break;
+    }
+
+    Q29:
+    i++;
+    grade = str[i];
+    switch(grade) {
+      case ' ' :
+        return 1;
+      default :
+         printf("Invalid grade\n" );
+         break;
+    }
 
     Q30:
-    if (i == tamanho) {
-        return 1;
-    }
-     grade = str[i];
+    i++;
+    grade = str[i];
     switch(grade) {
-      case 'd' :
-            i++;
+      case 't' :
             goto Q31;
             break;
       default :
@@ -563,34 +488,117 @@ int leitor(char str[]) {
          break;
     }
 
-
     Q31:
-    if (i == tamanho) {
-        return 1;
-    }
-     grade = str[i];
+    i++;
+    grade = str[i];
     switch(grade) {
-      case '.' :
-        printf("PALAVRA RECONHECIDA\n" );
+      case 'e' :
+            goto Q32;
+            break;
+      default :
+         printf("Invalid grade\n" );
+         break;
+    }
+
+    Q32:
+    i++;
+    grade = str[i];
+    switch(grade) {
+      case 'g' :
+            goto Q33;
+            break;
+      default :
+         printf("Invalid grade\n" );
+         break;
+    }
+
+    Q33:
+    i++;
+    grade = str[i];
+    switch(grade) {
+      case 'e' :
+            goto Q34;
+            break;
+      default :
+         printf("Invalid grade\n" );
+         break;
+    }
+
+    Q34:
+    i++;
+    grade = str[i];
+    switch(grade) {
+      case 'g' :
+            goto Q35;
+            break;
+      default :
+         printf("Invalid grade\n" );
+         break;
+    }
+
+    Q35:
+    i++;
+    grade = str[i];
+    switch(grade) {
+      case ' ' :
         return 1;
       default :
          printf("Invalid grade\n" );
          break;
     }
 
-
-    Q39:
-    if (i == tamanho) {
-        return 1;
-    }
+    Q36:
+    i++;
     grade = str[i];
     switch(grade) {
-      case 'h' :
-            i++;
-            goto Q19;
+      case 'a' :
+            goto Q37;
             break;
+      default :
+         printf("Invalid grade\n" );
+         break;
+    }
+
+    Q37:
+    i++;
+    grade = str[i];
+    switch(grade) {
       case 'r' :
-            i++;
+            goto Q38;
+            break;
+      default :
+         printf("Invalid grade\n" );
+         break;
+    }
+
+    Q38:
+    i++;
+    grade = str[i];
+    switch(grade) {
+      case ' ' :
+        return 1;
+      default :
+         return -1;
+         break;
+    }
+
+    Q39:
+    i++;
+    grade = str[i];
+    switch(grade) {
+      case 'o' :
+            goto Q40;
+            break;
+      default :
+         printf("Invalid grade\n" );
+         break;
+    }
+
+    Q40:
+    i++;
+    grade = str[i];
+    switch(grade) {
+      case 't' :
             goto Q41;
             break;
       default :
@@ -598,58 +606,444 @@ int leitor(char str[]) {
          break;
     }
 
-
-    Q36:
-
-
     Q41:
-    if (i == tamanho) {
-        return 1;
-    }
-     grade = str[i];
+    i++;
+    grade = str[i];
     switch(grade) {
-      case 'u' :
-            i++;
+      case ' ' :
+        return 1;
+      default :
+         return -1;
+         break;
+    }
+
+    Q42:
+    i++;
+    grade = str[i];
+    switch(grade) {
+      case 'n' :
+            goto Q43;
+            break;
+      default :
+         printf("Invalid grade\n" );
+         break;
+    }
+
+    Q43:
+    i++;
+    grade = str[i];
+    switch(grade) {
+      case 'd' :
+            goto Q44;
+            break;
+      default :
+         printf("Invalid grade\n" );
+         break;
+    }
+
+    Q44:
+    i++;
+    grade = str[i];
+    switch(grade) {
+      case ' ' :
+        return 1;
+      default :
+         printf("Invalid grade\n" );
+         break;
+    }
+
+    Q45:
+    i++;
+    grade = str[i];
+    switch(grade) {
+      case 'a' :
             goto Q46;
             break;
       default :
-         printf("Invalid grade\n" ); /* vira variavel dependendo do contexto */
+         printf("Invalid grade\n" );
          break;
     }
 
-
     Q46:
-    if (i == tamanho) {
-        return 1;
-    }
-     grade = str[i];
+    i++;
+    grade = str[i];
     switch(grade) {
-      case 'e' :
-            i++;
+      case 'l' :
             goto Q47;
             break;
       default :
-         printf("Invalid grade\n" ); /* vira variavel dependendo do contexto */
+         printf("Invalid grade\n" );
          break;
     }
-
 
     Q47:
-    if (i == tamanho) {
-        return 1;
-    }
-     grade = str[i];
+    i++;
+    grade = str[i];
     switch(grade) {
-      case ' ' :    //terminal COPIAR PARA OS OUTROS
-        printf("PALAVRA RECONHECIDA\n" );
-        return 1;
+      case 's' :
+            goto Q48;
+            break;
       default :
-         printf("Invalid grade\n" ); /* vira variavel dependendo do contexto */
+         printf("Invalid grade\n" );
          break;
     }
 
+    Q48:
+    i++;
+    grade = str[i];
+    switch(grade) {
+      case 'e' :
+            goto Q49;
+            break;
+      default :
+         printf("Invalid grade\n" );
+         break;
+    }
+
+    Q49:
+    i++;
+    grade = str[i];
+    switch(grade) {
+      case ' ' :
+        return 1;
+      default :
+         printf("Invalid grade\n" );
+         break;
+    }
+
+    Q50:
+    i++;
+    grade = str[i];
+    switch(grade) {
+      case 'r' :
+            goto Q51;
+            break;
+      case 'h' :
+            goto Q55;
+            break;
+      default :
+         printf("Invalid grade\n" );
+         break;
+    }
+
+    Q51:
+    i++;
+    grade = str[i];
+    switch(grade) {
+      case 'i' :
+            goto Q52;
+            break;
+      default :
+         printf("Invalid grade\n" );
+         break;
+    }
+
+    Q52:
+    i++;
+    grade = str[i];
+    switch(grade) {
+      case 't' :
+            goto Q53;
+            break;
+      default :
+         printf("Invalid grade\n" );
+         break;
+    }
+
+    Q53:
+    i++;
+    grade = str[i];
+    switch(grade) {
+      case 'e' :
+            goto Q54;
+            break;
+      default :
+         printf("Invalid grade\n" );
+         break;
+    }
+
+    Q54:
+    i++;
+    grade = str[i];
+    switch(grade) {
+      case ' ' :
+        return 1;
+      default :
+         printf("Invalid grade\n" );
+         break;
+    }
+
+    Q55:
+    i++;
+    grade = str[i];
+    switch(grade) {
+      case 'i' :
+            goto Q56;
+            break;
+      default :
+         printf("Invalid grade\n" );
+         break;
+    }
+
+    Q56:
+    i++;
+    grade = str[i];
+    switch(grade) {
+      case 'l' :
+            goto Q57;
+            break;
+      default :
+         printf("Invalid grade\n" );
+         break;
+    }
+
+    Q57:
+    i++;
+    grade = str[i];
+    switch(grade) {
+      case 'e' :
+            goto Q58;
+            break;
+      default :
+         printf("Invalid grade\n" );
+         break;
+    }
+
+    Q58:
+    i++;
+    grade = str[i];
+    switch(grade) {
+      case ' ' :
+        return 1;
+      default :
+         printf("Invalid grade\n" );
+         break;
+    }
+
+    Q59:
+    i++;
+    grade = str[i];
+    switch(grade) {
+      case 'o' :
+            goto Q64;
+            break;
+      case 'e' :
+            goto Q60;
+            break;
+      default :
+         printf("Invalid grade\n" );
+         break;
+    }
+
+    Q60:
+    i++;
+    grade = str[i];
+    switch(grade) {
+      case 'g' :
+            goto Q61;
+            break;
+      default :
+         printf("Invalid grade\n" );
+         break;
+    }
+
+    Q61:
+    i++;
+    grade = str[i];
+    switch(grade) {
+      case 'i' :
+            goto Q62;
+            break;
+      default :
+         printf("Invalid grade\n" );
+         break;
+    }
+
+    Q62:
+    i++;
+    grade = str[i];
+    switch(grade) {
+      case 'n' :
+            goto Q63;
+            break;
+      default :
+         printf("Invalid grade\n" );
+         break;
+    }
+
+    Q63:
+    i++;
+    grade = str[i];
+    switch(grade) {
+      case ' ' :
+        return 1;
+      default :
+         printf("Invalid grade\n" );
+         break;
+    }
+
+    Q64:
+    i++;
+    grade = str[i];
+    switch(grade) {
+      case 'o' :
+            goto Q65;
+            break;
+      default :
+         printf("Invalid grade\n" );
+         break;
+    }
+
+    Q65:
+    i++;
+    grade = str[i];
+    switch(grade) {
+      case 'l' :
+            goto Q66;
+            break;
+      default :
+         printf("Invalid grade\n" );
+         break;
+    }
+
+    Q66:
+    i++;
+    grade = str[i];
+    switch(grade) {
+      case 'e' :
+            goto Q67;
+            break;
+      default :
+         printf("Invalid grade\n" );
+         break;
+    }
+
+    Q67:
+    i++;
+    grade = str[i];
+    switch(grade) {
+      case 'a' :
+            goto Q68;
+            break;
+      default :
+         printf("Invalid grade\n" );
+         break;
+    }
+
+    Q68:
+    i++;
+    grade = str[i];
+    switch(grade) {
+      case 'n' :
+            goto Q69;
+            break;
+      default :
+         printf("Invalid grade\n" );
+         break;
+    }
+
+    Q69:
+    i++;
+    grade = str[i];
+    switch(grade) {
+      case ' ' :
+        return 1;
+      default :
+         printf("Invalid grade\n" );
+         break;
+    }
+
+    Q70:
+    i++;
+    grade = str[i];
+    switch(grade) {
+      case 'v' :
+            goto Q71;
+            break;
+      default :
+         printf("Invalid grade\n" );
+         break;
+    }
+
+    Q71:
+    i++;
+    grade = str[i];
+    switch(grade) {
+      case ' ' :
+        return 1;
+      default :
+         printf("Invalid grade\n" );
+         break;
+    }
+
+    Q72:
+    i++;
+    grade = str[i];
+    switch(grade) {
+      case 'o' :
+            goto Q73;
+            break;
+      case 'i' :
+            goto Q70;
+            break;
+      default :
+         printf("Invalid grade\n" );
+         break;
+    }
 
     Q73:
+    i++;
+    grade = str[i];
+    switch(grade) {
+      case ' ' :
+        return 1;
+      default :
+         printf("Invalid grade\n" );
+         break;
+    }
+
+    Q74:
+    i++;
+    grade = str[i];
+    switch(grade) {
+      case 'r' :
+            goto Q75;
+            break;
+      default :
+         printf("Invalid grade\n" );
+         break;
+    }
+
+    Q75:
+    i++;
+    grade = str[i];
+    switch(grade) {
+      case ' ' :
+        return 1;
+      default :
+         printf("Invalid grade\n" );
+         break;
+    }
+
+    Q81:
+
+    Q82:
+
+    Q83:
+
+    Q84:
+
+    Q85:
+
+    Q86:
+
+    Q89:
+
+    Q87:
+
+    Q88:
+
+    Q90:
 
     return -1;
 }
@@ -657,13 +1051,18 @@ int leitor(char str[]) {
 int main() {
     char str[80];
     printf("Entrada: ");
-    scanf("%79s", str);
+    //scanf("%79[^\n]", str);
 
-    if (leitor(str)) {
-        printf("\n\nEntrada aceita!\n\n");
+    gets(str);
+    int l = strlen(str);
+
+    printf("tamanho do input %d\n",l );
+    int r = leitor(str);
+    printf("valor do resultado %d\n",r );
+    if (r!= -1) {
+        printf("\n\nPalavra aceita!\n\n");
     } else {
-        printf("\n\nERRO: Entrada nao aceita\n\n");
+        printf("\n\nERRO: Palavra nao reconhecida\n\n");
     }
-
     return 0;
 }
