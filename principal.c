@@ -8,12 +8,6 @@
 #include <ctype.h>
 #include <string.h>
 
-#define ANDX
-#define BOOLEANX
-#define BEGINX
-#define BEGINX
-#define IFX
-
 int leitor(char str[]) {
     int i = -1, tamanho = strlen(str);
 
